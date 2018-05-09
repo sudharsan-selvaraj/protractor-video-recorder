@@ -1,0 +1,36 @@
+{
+  "name": "protractor-video-recorder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-ss:sudharsan-selvaraj/protractor-video-recorder.git"
+  },
+  "author": "Sudharsan Selvaraj <sudharsanselvaraj.c@gmail.com> (https://github.com/sudharsan-selvaraj/)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "lokijs": "^1.5.3",
+    "node-key-sender": "^1.0.10",
+    "protractor-hotkeys": "0.0.5",
+    "q": "^1.5.1",
+    "robotjs": "^0.5.1",
+    "ws": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/http-server": "^0.10.0",
+    "@types/node": "^10.0.4",
+    "@types/ws": "^5.1.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-typescript": "^4.0.2",
+    "typescript": "^2.7.2"
+  }
+}

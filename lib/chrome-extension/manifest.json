@@ -1,0 +1,29 @@
+{
+  "name" : "screen-recorder",
+  "manifest_version":2,
+  "version":"6.4",
+  "background" : {
+    "scripts":[
+      "scripts/socket.js",
+      "scripts/messageHandler.js",
+      "scripts/recordRTC.js",
+      "scripts/recorder.js"
+    ],
+    "persistent":false
+  },
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["*://*/*","*://localhost/*"],
+      "js": ["scripts/contenscript.js"]
+    }
+  ],
+  "permissions": ["tabs","storage","tabCapture","activeTab"],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+F"
+      }
+    }
+  }
+}
